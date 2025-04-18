@@ -1,4 +1,4 @@
-export async function GET(request:any) {
+export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const lat = searchParams.get('lat');
     const lon = searchParams.get('lon');
